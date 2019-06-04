@@ -1,0 +1,50 @@
+th {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.selected {
+    background-color: #ceedd4;
+}
+
+i,
+th,
+tbody tr > td:hover {
+    cursor: pointer;
+}
+
+#but_block {
+    width: 50%;
+}
+
+#but_block > button {
+    width: 50%;
+    float: left;
+}
+
+#tableHeader > th {
+    background-color: rgba(69, 152, 159, 0.824);
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+
+.modal-body {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-body > .tab > h3 {
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 20%;
+}
