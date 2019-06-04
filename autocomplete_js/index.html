@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Autocomplete Javascript</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var tags = [
+            "C",
+            "C++",
+            "Java",
+            "JavaScript",
+            "PHP",
+            "Python",
+            "Ruby",
+            "C#",
+            "BASIC",
+            "Go",
+            "Swift",
+            "Pascal"
+        ];
+
+
+        var n = tags.length;
+
+        function ac(value) {
+            document.getElementById('datalist').innerHTML = '';
+
+            l = value.length;
+            for (var i = 0; i < n; i++) {
+                if (((tags[i].toLowerCase()).indexOf(value.toLowerCase())) > -1) {
+
+                    var node = document.createElement("option");
+                    var val = document.createTextNode(tags[i]);
+                    node.appendChild(val);
+
+                    document.getElementById("datalist").appendChild(node);
+                }
+            }
+        }
+    </script>
+    Enter some programming language:
+    <input type="text" list="datalist" onkeyup="ac(this.value)">
+    <datalist id="datalist">
+
+        <option value="C"></option>
+        <option value="C++"></option>
+        <option value="Java"></option>
+        <option value="JavaScript"></option>
+        <option value="PHP"></option>
+        <option value="Python"></option>
+        <option value="Ruby"></option>
+        <option value="C#"></option>
+        <option value="BASIC"></option>
+        <option value="Go"></option>
+        <option value="Swift"></option>
+        <option value="Pascal"></option>
+
+    </datalist>
+</body></html>
